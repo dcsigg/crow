@@ -11,11 +11,7 @@ function init ()
       , time = 0.25
       , stream = function ()
                      v = (input[1].volts)
-                     print(v)
-
                      output[1].volts = (math.floor(v*12)/12)
-                     --print("value v")
-                     --print(v)
                      output[1].scale({0,2,4,5,7,9})
                                  end
                 }
@@ -24,8 +20,6 @@ function init ()
       , stream = function ()
                       w = (input[2].volts-1)--- subtract by 2 or more to get lower notes
                       output[2].volts = (math.floor(w*12)/12)
-                      --print("value w")
-                      --print(w)
                       output[2].scale({0,2,4,7})
                     end
                   }
