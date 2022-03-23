@@ -3,7 +3,7 @@
 --in1: voltage source 1 (lfo or other)
 --in2: voltage source 2 (lfo or other)
 --out1: quantized voltage to oscillator
---out1: quantized voltage to oscillator
+--out2: quantized voltage to oscillator
 
 
 function init ()
